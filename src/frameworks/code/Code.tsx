@@ -1,0 +1,30 @@
+import { ElementRef, ComponentProps, ReactNode } from 'react';
+import { styled, CSS } from '../../../stitches.config';
+
+const Code = styled('code', {
+  fontFamily: '$mono',
+  fontSize: 'max(12px, 85%)',
+  whiteSpace: 'nowrap',
+  padding: '0 3px 2px 3px',
+
+  variants: {
+    variant: {
+      gray: {
+        backgroundColor: '$slate3',
+        color: '$slate11',
+      },
+      violet: {
+        backgroundColor: '$violet3',
+        color: '$violet11',
+      },
+    },
+  },
+  defaultVariants: {
+    variant: 'violet',
+  },
+});
+
+export type CodeRef = ElementRef<typeof Code>;
+export type ICodeProps = ComponentProps<typeof Code> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
+
+export default Code;

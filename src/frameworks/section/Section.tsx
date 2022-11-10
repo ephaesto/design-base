@@ -1,0 +1,41 @@
+import { ElementRef, ComponentProps, ReactNode } from 'react';
+import { styled, CSS } from '../../../stitches.config';
+
+const Section = styled('section', {
+  // Reset
+  boxSizing: 'border-box',
+  flexShrink: 0,
+  '&::before': {
+    boxSizing: 'border-box',
+    content: '""',
+  },
+  '&::after': {
+    boxSizing: 'border-box',
+    content: '""',
+  },
+
+  variants: {
+    size: {
+      '1': {
+        py: '$3',
+      },
+      '2': {
+        py: '$5',
+      },
+      '3': {
+        py: '$9',
+      },
+    },
+  },
+  defaultVariants: {
+    size: '3',
+  },
+});
+
+export type SectionRef = ElementRef<typeof Section>;
+export type ISectionProps = ComponentProps<typeof Section> & {
+  css?: CSS;
+  as?: keyof JSX.IntrinsicElements | ReactNode;
+};
+
+export default Section;
