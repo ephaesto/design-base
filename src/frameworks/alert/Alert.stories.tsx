@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import AlertComponent, { IAlertProps } from './Alert';
+import AlertComponent, { IAlertProps } from './index';
 
 export default {
   title: 'Exemple/Alert',

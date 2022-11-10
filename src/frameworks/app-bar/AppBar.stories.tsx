@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 import Button from '../button/Button';
 import For from '../../utils/For';
-import AppBarComponent, { IAppBarProps } from './AppBar';
+import AppBarComponent, { IAppBarProps } from './index';
 
 export default {
   title: 'Exemple/AppBar',

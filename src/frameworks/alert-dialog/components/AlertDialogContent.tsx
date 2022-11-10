@@ -4,8 +4,8 @@ import {
   Portal as AlertDialogPrimitivePortal,
 } from '@radix-ui/react-alert-dialog';
 import { ComponentProps, ElementRef, forwardRef } from 'react';
-import { styled, CSS } from '../../../stitches.config';
-import { overlayStyles, panelStyles } from '../../css-utils';
+import { styled, CSS } from '../../../../stitches.config';
+import { overlayStyles, panelStyles } from '../../../css-utils';
 
 const StyledOverlay = styled(AlertDialogPrimitiveOverlay, overlayStyles, {
   position: 'fixed',

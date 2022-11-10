@@ -1,5 +1,4 @@
-import { ComponentProps, ElementRef, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const AppBar = styled('div', {
   boxSizing: 'border-box',
@@ -96,8 +95,5 @@ const AppBar = styled('div', {
     color: 'loContrast',
   },
 });
-
-export type AppBarRef = ElementRef<typeof AppBar>;
-export type IAppBarProps = ComponentProps<typeof AppBar> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
 
 export default AppBar;
