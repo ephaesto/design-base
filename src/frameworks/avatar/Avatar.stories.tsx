@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 import For from '../../utils/For';
 import Box from '../box/Box';
-import AvatarComponent, { IAvatarProps } from './Avatar';
+import AvatarComponent, { IAvatarProps } from './index';
 
 export default {
   title: 'Exemple/Avatar',

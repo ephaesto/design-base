@@ -1,13 +1,15 @@
 import { Story, Meta } from '@storybook/react';
-import AlertDialogComponent, { IAlertDialogProps } from './AlertDialog';
+import AlertDialogComponent, {
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  IAlertDialogProps,
+} from './index';
 import Text from '../text/Text';
-import AlertDialogTrigger from './AlertDialogTrigger';
-import Button from '../button/Button';
-import AlertDialogContent from './AlertDialogContent';
-import AlertDialogTitle from './AlertDialogTitle';
-import AlertDialogAction from './AlertDialogAction';
 import Box from '../box/Box';
-import AlertDialogCancel from './AlertDialogCancel';
+import Button from '../button/Button';
 
 export default {
   title: 'Exemple/AlertDialog',
