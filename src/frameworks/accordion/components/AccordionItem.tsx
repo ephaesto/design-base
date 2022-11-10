@@ -1,5 +1,5 @@
 import { Item as AccordionPrimitiveItem } from '@radix-ui/react-accordion';
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../stitches.config';
 
 const AccordionItem = styled(AccordionPrimitiveItem, {
   borderTop: '1px solid $colors$slate6',

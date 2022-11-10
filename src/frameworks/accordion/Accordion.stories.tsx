@@ -1,9 +1,6 @@
 import { Story, Meta } from '@storybook/react';
-import AccordionComponent, { IAccordionProps } from './Accordion';
+import AccordionComponent, { AccordionContent, AccordionItem, AccordionTrigger, IAccordionProps } from './index';
 import Text from '../text/Text';
-import AccordionItem from './AccordionItem';
-import AccordionTrigger from './AccordionTrigger';
-import AccordionContent from './AccordionContent';
 
 export default {
   title: 'Exemple/Accordion',

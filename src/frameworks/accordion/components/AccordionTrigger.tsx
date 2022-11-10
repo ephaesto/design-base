@@ -1,7 +1,7 @@
 import { Header as AccordionPrimitiveHeader, Trigger as AccordionPrimitiveTrigger } from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { ComponentProps, ElementRef, forwardRef } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled, CSS } from '../../../../stitches.config';
 
 const StyledHeader = styled(AccordionPrimitiveHeader, {
   all: 'unset',

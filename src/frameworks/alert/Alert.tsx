@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Alert = styled('div', {
   // Reset
@@ -48,8 +47,5 @@ const Alert = styled('div', {
     variant: 'gray',
   },
 });
-
-export type AlertRef = ElementRef<typeof Alert>;
-export type IAlertProps = ComponentProps<typeof Alert> & { css?: CSS };
 
 export default Alert;
