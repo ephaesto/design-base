@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Code = styled('code', {
   fontFamily: '$mono',
@@ -23,8 +22,5 @@ const Code = styled('code', {
     variant: 'violet',
   },
 });
-
-export type CodeRef = ElementRef<typeof Code>;
-export type ICodeProps = ComponentProps<typeof Code> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
 
 export default Code;

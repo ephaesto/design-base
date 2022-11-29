@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import ButtonComponent, { IButtonProps } from './Button';
+import ButtonComponent, { IButtonProps } from './index';
 
 export default {
   title: 'Exemple/Button',

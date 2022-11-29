@@ -1,7 +1,6 @@
-import { ComponentProps, ElementRef, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
-export const Card = styled('div', {
+const Card = styled('div', {
   appearance: 'none',
   border: 'none',
   boxSizing: 'border-box',
@@ -94,8 +93,5 @@ export const Card = styled('div', {
     },
   },
 });
-
-export type CardRef = ElementRef<typeof Card>;
-export type ICardProps = ComponentProps<typeof Card> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
 
 export default Card;
