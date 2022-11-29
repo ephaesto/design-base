@@ -1,4 +1,4 @@
-export { default as ContextMenuContentRoot } from './components/ContextMenuContentRoot';
+export { default as ContextMenuRadioItemRoot } from './components/ContextMenuRadioItemRoot';
 
-export { default } from './ContextMenuContent';
-export type { ContextMenuContentRef, IContextMenuContentProps } from './ContextMenuContentTypes';
+export { default } from './ContextMenuRadioItem';
+export type { ContextMenuRadioItemRef, IContextMenuRadioItemProps } from './ContextMenuRadioItemTypes';
