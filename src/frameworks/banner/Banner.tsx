@@ -1,5 +1,4 @@
-import { ComponentProps, ElementRef, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Banner = styled('div', {
   // Reset
@@ -79,8 +78,5 @@ const Banner = styled('div', {
     variant: 'gray',
   },
 });
-
-export type BannerRef = ElementRef<typeof Banner>;
-export type IBannerProps = ComponentProps<typeof Banner> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
 
 export default Banner;

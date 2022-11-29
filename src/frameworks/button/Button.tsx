@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Button = styled('button', {
   // Reset
@@ -320,8 +319,5 @@ const Button = styled('button', {
     variant: 'gray',
   },
 });
-
-export type ButtonRef = ElementRef<typeof Button>;
-export type IButtonProps = ComponentProps<typeof Button> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
 
 export default Button;

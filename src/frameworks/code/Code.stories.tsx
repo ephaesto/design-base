@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import CodeComponent, { ICodeProps } from './Code';
+import CodeComponent, { ICodeProps } from './index';
 
 export default {
   title: 'Exemple/Code',

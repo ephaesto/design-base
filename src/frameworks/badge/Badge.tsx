@@ -1,5 +1,4 @@
-import { ComponentProps, ElementRef, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Badge = styled('span', {
   // Reset
@@ -433,8 +432,5 @@ const Badge = styled('span', {
     variant: 'gray',
   },
 });
-
-export type BadgeRef = ElementRef<typeof Badge>;
-export type IBadgeProps = ComponentProps<typeof Badge> & { css?: CSS; as?: keyof JSX.IntrinsicElements | ReactNode };
 
 export default Badge;

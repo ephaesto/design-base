@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import ContainerComponent, { IContainerProps } from './Container';
+import ContainerComponent, { IContainerProps } from './index';
 
 export default {
   title: 'Exemple/Container',

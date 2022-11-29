@@ -1,16 +1,18 @@
 import { Story, Meta } from '@storybook/react';
 import Box from '../box/Box';
 import Text from '../text/Text';
-import ContextMenuComponent, { IContextMenuProps } from './ContextMenu';
-import ContextMenuCheckboxItem from './ContextMenuCheckboxItem';
-import ContextMenuContent from './ContextMenuContent';
-import ContextMenuGroup from './ContextMenuGroup';
-import ContextMenuItem from './ContextMenuItem';
-import ContextMenuLabel from './ContextMenuLabel';
-import ContextMenuRadioGroup from './ContextMenuRadioGroup';
-import ContextMenuRadioItem from './ContextMenuRadioItem';
-import ContextMenuSeparator from './ContextMenuSeparator';
-import ContextMenuTrigger from './ContextMenuTrigger';
+import ContextMenuComponent, {
+  IContextMenuProps,
+  ContextMenuCheckboxItem,
+  ContextMenuContent,
+  ContextMenuGroup,
+  ContextMenuItem,
+  ContextMenuLabel,
+  ContextMenuRadioGroup,
+  ContextMenuRadioItem,
+  ContextMenuSeparator,
+  ContextMenuTrigger,
+} from './index';
 
 export default {
   title: 'Exemple/ContextMenu',
