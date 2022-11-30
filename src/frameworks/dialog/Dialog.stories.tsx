@@ -3,10 +3,7 @@ import { DesignSystemProvider } from '../../providers/DesignSystemProvider';
 import Button from '../button/Button';
 import Text from '../text/Text';
 import Tooltip from '../tooltip/Tooltip';
-import DialogComponent, { IDialogProps } from './Dialog';
-import DialogClose from './DialogClose';
-import DialogContent from './DialogContent';
-import DialogTrigger from './DialogTrigger';
+import DialogComponent, { DialogClose, DialogContent, DialogTrigger, IDialogProps } from './index';
 
 export default {
   title: 'Exemple/Dialog',
