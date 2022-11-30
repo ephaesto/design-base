@@ -1,15 +1,17 @@
 import { Story, Meta } from '@storybook/react';
 import Button from '../button/Button';
-import DropdownMenuComponent, { IDropdownMenuProps } from './DropdownMenu';
-import DropdownMenuCheckboxItem from './DropdownMenuCheckboxItem';
-import DropdownMenuContent from './DropdownMenuContent';
-import DropdownMenuGroup from './DropdownMenuGroup';
-import DropdownMenuItem from './DropdownMenuItem';
-import DropdownMenuLabel from './DropdownMenuLabel';
-import DropdownMenuRadioGroup from './DropdownMenuRadioGroup';
-import DropdownMenuRadioItem from './DropdownMenuRadioItem';
-import DropdownMenuSeparator from './DropdownMenuSeparator';
-import DropdownMenuTrigger from './DropdownMenuTrigger';
+import DropdownMenuComponent, {
+  IDropdownMenuProps,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from './index';
 
 export default {
   title: 'Exemple/DropdownMenu',
