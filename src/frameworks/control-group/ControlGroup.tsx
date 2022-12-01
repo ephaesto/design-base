@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 import Button from '../button/Button';
 import Select from '../select/Select';
 import TextField from '../text-field/TextField';
@@ -90,11 +89,5 @@ const ControlGroup = styled('div', {
     },
   },
 });
-
-export type ControlGroupRef = ElementRef<typeof ControlGroup>;
-export type IControlGroupProps = ComponentProps<typeof ControlGroup> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default ControlGroup;

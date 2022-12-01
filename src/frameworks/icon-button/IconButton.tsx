@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const IconButton = styled('button', {
   // Reset
@@ -135,11 +134,5 @@ const IconButton = styled('button', {
     variant: 'ghost',
   },
 });
-
-export type IconButtonRef = ElementRef<typeof IconButton>;
-export type IIconButtonProps = ComponentProps<typeof IconButton> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default IconButton;

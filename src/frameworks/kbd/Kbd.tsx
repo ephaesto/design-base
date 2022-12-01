@@ -1,7 +1,6 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
-export const Kbd = styled('kbd', {
+const Kbd = styled('kbd', {
   boxSizing: 'border-box',
   display: 'inline-flex',
   alignItems: 'center',
@@ -86,11 +85,5 @@ export const Kbd = styled('kbd', {
     size: '2',
   },
 });
-
-export type KbdRef = ElementRef<typeof Kbd>;
-export type IKbdProps = ComponentProps<typeof Kbd> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Kbd;

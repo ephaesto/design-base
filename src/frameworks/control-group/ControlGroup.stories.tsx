@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import Button from '../button/Button';
-import ControlGroupComponent, { IControlGroupProps } from './ControlGroup';
+import ControlGroupComponent, { IControlGroupProps } from './index';
 
 export default {
   title: 'Exemple/ControlGroup',

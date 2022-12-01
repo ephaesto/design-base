@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Container = styled('div', {
   // Reset
@@ -31,11 +30,5 @@ const Container = styled('div', {
     size: '4',
   },
 });
-
-export type ContainerRef = ElementRef<typeof Container>;
-export type IContainerProps = ComponentProps<typeof Container> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Container;

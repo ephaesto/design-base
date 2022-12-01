@@ -1,8 +1,8 @@
 import { Story, Meta } from '@storybook/react';
-import CardComponent, { ICardProps } from './Card';
+import CardComponent, { ICardProps } from './index';
 import Text from '../text/Text';
 import Image from '../image/Image';
-import Box from '../box/Box';
+import Box from '../box';
 
 export default {
   title: 'Exemple/Card',
