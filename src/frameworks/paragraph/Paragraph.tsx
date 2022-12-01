@@ -1,31 +1,17 @@
-import { ComponentProps, ElementRef, forwardRef, ReactNode, Ref } from 'react';
+import { forwardRef } from 'react';
 import merge from 'lodash.merge';
 import Text from '../text/Text';
-import { VariantProps, CSS } from '../../../stitches.config';
-
-const DEFAULT_TAG = 'p';
-
-type TextSizeVariants = Pick<VariantProps<typeof Text>, 'size'>;
-type ParagraphSizeVariants = '1' | '2';
-type ParagraphVariants = { size?: ParagraphSizeVariants } & Omit<VariantProps<typeof Text>, 'size'>;
-type ParagraphRef = ElementRef<typeof DEFAULT_TAG>;
-export type IParagraphProps = ComponentProps<typeof DEFAULT_TAG> &
-  ParagraphVariants & {
-    css?: CSS;
-    as?: keyof JSX.IntrinsicElements | ReactNode;
-    ref?: Ref<HTMLHeadingElement> | undefined;
-  };
+import { DEFAULT_TAG } from './constants/defaultTag';
+import { IParagraphProps, ITextSize, ITextCss, ParagraphRef } from './ParagraphTypes';
 
 const Paragraph = forwardRef<ParagraphRef, IParagraphProps>(
   ({ size = '1', css, ...textProps }, forwardedRef): JSX.Element => {
-    // This is the mapping of Paragraph Variants to Text variants
-    const textSize: Record<ParagraphSizeVariants, TextSizeVariants['size']> = {
+    const textSize: ITextSize = {
       1: { '@initial': '3', '@bp2': '4' },
       2: { '@initial': '5', '@bp2': '6' },
     };
 
-    // This is the mapping of Paragraph Variants to Text css
-    const textCss: Record<ParagraphSizeVariants, CSS> = {
+    const textCss: ITextCss = {
       1: { lineHeight: '25px', '@bp2': { lineHeight: '27px' } },
       2: { color: '$slate11', lineHeight: '27px', '@bp2': { lineHeight: '30px' } },
     };
@@ -34,9 +20,9 @@ const Paragraph = forwardRef<ParagraphRef, IParagraphProps>(
         as={DEFAULT_TAG}
         {...textProps}
         ref={forwardedRef}
-        size={textSize[size] as TextSizeVariants['size']}
+        size={textSize[size]}
         css={{
-          ...merge(textCss[size] as CSS, css),
+          ...merge(textCss[size], css),
         }}
       />
     );

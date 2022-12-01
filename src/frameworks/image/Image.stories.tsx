@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import ImageComponent, { IImageProps } from './Image';
+import ImageComponent, { IImageProps } from './index';
 
 export default {
   title: 'Exemple/Image',

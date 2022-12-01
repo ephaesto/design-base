@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import HeadingComponent, { IHeadingProps } from './Heading';
+import HeadingComponent, { IHeadingProps } from './index';
 
 export default {
   title: 'Exemple/Heading',

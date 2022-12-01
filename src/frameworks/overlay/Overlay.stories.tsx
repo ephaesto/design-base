@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import OverlayComponent, { IOverlayProps } from './Overlay';
+import OverlayComponent, { IOverlayProps } from './index';
 
 export default {
   title: 'Exemple/Overlay',
