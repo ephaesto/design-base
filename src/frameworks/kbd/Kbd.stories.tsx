@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import KbdComponent, { IKbdProps } from './Kbd';
+import KbdComponent, { IKbdProps } from './index';
 
 export default {
   title: 'Exemple/Kbd',

@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 import Text from '../text/Text';
 
 const Link = styled('a', {
@@ -61,11 +60,5 @@ const Link = styled('a', {
     variant: 'contrast',
   },
 });
-
-export type LinkRef = ElementRef<typeof Link>;
-export type ILinkProps = ComponentProps<typeof Link> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Link;

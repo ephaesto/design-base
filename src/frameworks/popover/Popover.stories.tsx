@@ -3,10 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import Button from '../button/Button';
 import Text from '../text/Text';
 import IconButton from '../icon-button/IconButton';
-import PopoverComponent, { IPopoverProps } from './Popover';
-import PopoverClose from './PopoverClose';
-import PopoverContent from './PopoverContent';
-import PopoverTrigger from './PopoverTrigger';
+import PopoverComponent, { IPopoverProps, PopoverClose, PopoverContent, PopoverTrigger } from './index';
 
 export default {
   title: 'Exemple/Popover',

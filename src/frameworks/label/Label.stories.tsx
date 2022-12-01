@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import LabelComponent, { ILabelProps } from './Label';
+import LabelComponent, { ILabelProps } from './index';
 
 export default {
   title: 'Exemple/Label',

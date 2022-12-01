@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import PanelComponent, { IPanelProps } from './Panel';
+import PanelComponent, { IPanelProps } from './index';
 
 export default {
   title: 'Exemple/Panel',

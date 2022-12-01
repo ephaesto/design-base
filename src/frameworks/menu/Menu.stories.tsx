@@ -1,13 +1,15 @@
 import { Story, Meta } from '@storybook/react';
 import Box from '../box/Box';
-import MenuComponent, { IMenuProps } from './Menu';
-import MenuContent from './MenuContent';
-import MenuGroup from './MenuGroup';
-import MenuItem from './MenuItem';
-import MenuLabel from './MenuLabel';
-import MenuRadioGroup from './MenuRadioGroup';
-import MenuRadioItem from './MenuRadioItem';
-import MenuSeparator from './MenuSeparator';
+import MenuComponent, {
+  IMenuProps,
+  MenuContent,
+  MenuGroup,
+  MenuItem,
+  MenuLabel,
+  MenuRadioGroup,
+  MenuRadioItem,
+  MenuSeparator,
+} from './index';
 
 export default {
   title: 'Exemple/Menu',
