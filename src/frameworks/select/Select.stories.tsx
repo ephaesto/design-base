@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import SelectComponent, { ISelectProps } from './Select';
+import SelectComponent, { ISelectProps } from './index';
 
 export default {
   title: 'Exemple/Select',

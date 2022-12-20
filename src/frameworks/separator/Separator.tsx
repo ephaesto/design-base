@@ -1,6 +1,5 @@
 import { Root as SeparatorPrimitiveRoot } from '@radix-ui/react-separator';
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Separator = styled(SeparatorPrimitiveRoot, {
   border: 'none',
@@ -39,11 +38,5 @@ const Separator = styled(SeparatorPrimitiveRoot, {
     size: '1',
   },
 });
-
-export type SeparatorRef = ElementRef<typeof Separator>;
-export type ISeparatorProps = ComponentProps<typeof Separator> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Separator;

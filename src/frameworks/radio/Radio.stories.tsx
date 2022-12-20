@@ -1,8 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 import Box from '../box';
 import Label from '../label';
-import RadioComponent, { IRadioProps } from './Radio';
-import RadioGroup from './RadioGroup';
+import RadioComponent, { IRadioProps, RadioGroup } from './index';
 
 export default {
   title: 'Exemple/Radio',
