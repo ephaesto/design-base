@@ -1,6 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import Box from '../box/Box';
-import SeparatorComponent, { ISeparatorProps } from './Separator';
+import SeparatorComponent, { ISeparatorProps } from './index';
 
 export default {
   title: 'Exemple/Separator',

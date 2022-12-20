@@ -1,9 +1,6 @@
-import { Root as AccordionPrimitiveRoot } from '@radix-ui/react-accordion';
 import { forwardRef } from 'react';
-import { styled } from '../../../stitches.config';
 import { AccordionRef, IAccordionProps } from './AccordionTypes';
-
-export const AccordionRoot = styled(AccordionPrimitiveRoot, {});
+import AccordionRoot from './components/AccordionRoot';
 
 export const Accordion = forwardRef<AccordionRef, IAccordionProps>(
   ({ children, ...props }, forwardedRef): JSX.Element => (

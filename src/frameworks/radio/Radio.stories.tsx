@@ -1,6 +1,7 @@
 import { Story, Meta } from '@storybook/react';
-import RadioComponent, { IRadioProps } from './Radio';
-import RadioGroup from './RadioGroup';
+import Box from '../box';
+import Label from '../label';
+import RadioComponent, { IRadioProps, RadioGroup } from './index';
 
 export default {
   title: 'Exemple/Radio',
@@ -9,8 +10,18 @@ export default {
 
 export const Radio: Story<IRadioProps> = args => (
   <RadioGroup>
-    <RadioComponent {...args} value="a" size="1" css={{ mr: '$3' }} />
-    <RadioComponent {...args} value="b" size="1" css={{ mr: '$3' }} />
+    <Box css={{ display: 'flex', alignItems: 'center' }}>
+      <RadioComponent {...args} value="a" size="1" css={{ mr: '$3' }} />
+      <Label className="Label" htmlFor="a">
+        Default
+      </Label>
+    </Box>
+    <Box css={{ display: 'flex', alignItems: 'center' }}>
+      <RadioComponent {...args} value="b" size="1" css={{ mr: '$3' }} />
+      <Label className="Label" htmlFor="b">
+        Comfortable
+      </Label>
+    </Box>
   </RadioGroup>
 );
 
