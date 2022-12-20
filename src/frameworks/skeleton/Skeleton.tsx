@@ -1,10 +1,5 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, keyframes, CSS } from '../../../stitches.config';
-
-const pulse = keyframes({
-  '0%': { opacity: 0 },
-  '100%': { opacity: '100%' },
-});
+import { styled } from '../../../stitches.config';
+import { pulse } from './keyframes/pulse';
 
 const Skeleton = styled('div', {
   backgroundColor: '$slate4',
@@ -79,11 +74,5 @@ const Skeleton = styled('div', {
     variant: 'text',
   },
 });
-
-export type SkeletonRef = ElementRef<typeof Skeleton>;
-export type ISkeletonProps = ComponentProps<typeof Skeleton> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Skeleton;

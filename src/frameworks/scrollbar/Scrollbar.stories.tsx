@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import Box from '../box/Box';
-import ScrollbarComponent, { IScrollbarProps } from './Scrollbar';
+import ScrollbarComponent, { IScrollbarProps } from './index';
 
 export default {
   title: 'Exemple/Scrollbar',

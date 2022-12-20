@@ -1,6 +1,5 @@
 import { Root as TogglePrimitiveRoot } from '@radix-ui/react-toggle';
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const SimpleToggle = styled(TogglePrimitiveRoot, {
   // Reset
@@ -65,11 +64,5 @@ const SimpleToggle = styled(TogglePrimitiveRoot, {
     },
   },
 });
-
-export type SimpleToggleRef = ElementRef<typeof SimpleToggle>;
-export type ISimpleToggleProps = ComponentProps<typeof SimpleToggle> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default SimpleToggle;

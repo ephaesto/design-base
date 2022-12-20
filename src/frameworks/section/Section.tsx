@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Section = styled('section', {
   // Reset
@@ -31,11 +30,5 @@ const Section = styled('section', {
     size: '3',
   },
 });
-
-export type SectionRef = ElementRef<typeof Section>;
-export type ISectionProps = ComponentProps<typeof Section> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Section;

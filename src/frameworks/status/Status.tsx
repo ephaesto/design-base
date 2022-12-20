@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Status = styled('div', {
   borderRadius: '50%',
@@ -39,11 +38,5 @@ const Status = styled('div', {
     variant: 'gray',
   },
 });
-
-export type StatusRef = ElementRef<typeof Status>;
-export type IStatusProps = ComponentProps<typeof Status> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Status;

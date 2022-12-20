@@ -1,20 +1,9 @@
-import { useRef, ReactNode } from 'react';
+import { useRef } from 'react';
 import { useLayoutEffect } from '@radix-ui/react-use-layout-effect';
-import Box from '../box/Box';
-
-interface PointType {
-  x: number;
-  y: number;
-}
-
-interface VectorType {
-  dx: number;
-  dy: number;
-}
-
-export interface IScrollbarProps {
-  children: ReactNode;
-}
+import ScrollbarContent from './components/ScrollbarContent';
+import ScrollbarThumb from './components/ScrollbarThumb';
+import ScrollbarRoot from './components/ScrollbarRoot';
+import { IScrollbarProps, VectorType, PointType } from './ScrollbarTypes';
 
 const Scrollbar = ({ children }: IScrollbarProps): JSX.Element => {
   const thumbRef = useRef<HTMLDivElement>(null);
@@ -133,78 +122,12 @@ const Scrollbar = ({ children }: IScrollbarProps): JSX.Element => {
   }, []);
 
   return (
-    <Box
-      ref={wrapperRef}
-      css={{
-        display: 'flex',
-        flex: 1,
-        flexDirection: 'column',
-        minHeight: 0,
-        maxHeight: '100%',
-        position: 'relative',
-        // This bit shows the thumb when you hover the wrapper
-        '&:hover': {
-          '[data-scroll-thumb]': {
-            opacity: 1,
-          },
-        },
-        '&.workos-is-dragging': {
-          // Need to keep pointer events when scrolling so thumb isn't hidden immediately after scroll
-          pointerEvents: 'auto',
-          // But still remove pointer events from content
-          '[data-scroll-content]': {
-            pointerEvents: 'none',
-          },
-          // Need to always keep the thumb visible when scrolling, even if the mouse leaves the wrapper
-          '[data-scroll-thumb]': {
-            opacity: 1,
-          },
-        },
-      }}
-    >
+    <ScrollbarRoot ref={wrapperRef}>
       {/* Lock the content into its own zIndex */}
-      <Box
-        data-scroll-content
-        ref={contentRef}
-        css={{
-          position: 'relative',
-          overflow: 'scroll',
-          scrollbarWidth: 'none',
-          zIndex: 1,
-          '&::-webkit-scrollbar': { display: 'none' },
-        }}
-        style={{
-          WebkitOverflowScrolling: 'touch',
-        }}
-      >
-        {children}
-      </Box>
+      <ScrollbarContent ref={contentRef}>{children}</ScrollbarContent>
       {/* Create the thumb on a higher zIndex */}
-      <Box
-        ref={thumbRef}
-        data-scroll-thumb
-        css={{
-          opacity: 0,
-          zIndex: 2,
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          width: '8px',
-          // Fill in the thumb color
-          '&::after': {
-            content: '""',
-            position: 'absolute',
-            top: '2px',
-            left: '2px',
-            width: 'calc(100% - 4px)',
-            height: 'calc(100% - 4px)',
-            // Match Radix hue on grays
-            backgroundColor: 'hsla(206, 5%, 50%, 0.3)',
-            borderRadius: '9999px',
-          },
-        }}
-      />
-    </Box>
+      <ScrollbarThumb ref={thumbRef} />
+    </ScrollbarRoot>
   );
 };
 
