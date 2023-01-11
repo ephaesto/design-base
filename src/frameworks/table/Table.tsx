@@ -1,9 +1,8 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
-import Tbody from './Tbody';
-import Tr from './Tr';
+import { styled } from '../../../stitches.config';
+import Tbody from './components/Tbody';
+import Tr from './components/Tr';
 
-export const Table = styled('table', {
+const Table = styled('table', {
   width: '100%',
   tableLayout: 'fixed',
   borderSpacing: 0,
@@ -21,11 +20,5 @@ export const Table = styled('table', {
     },
   },
 });
-
-export type TableRef = ElementRef<typeof Table>;
-export type ITableProps = ComponentProps<typeof Table> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Table;

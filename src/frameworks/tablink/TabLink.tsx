@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const TabLink = styled('a', {
   position: 'relative',
@@ -42,11 +41,5 @@ const TabLink = styled('a', {
     },
   },
 });
-
-export type TabLinkRef = ElementRef<typeof TabLink>;
-export type ITabLinkProps = ComponentProps<typeof TabLink> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default TabLink;

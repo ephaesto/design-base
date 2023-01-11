@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import TextFieldComponent, { ITextFieldProps } from './TextField';
+import TextFieldComponent, { ITextFieldProps } from './index';
 
 export default {
   title: 'Exemple/TextField',

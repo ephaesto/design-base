@@ -1,6 +1,5 @@
 import { Root as TabsPrimitiveRoot } from '@radix-ui/react-tabs';
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Tabs = styled(TabsPrimitiveRoot, {
   display: 'flex',
@@ -8,11 +7,5 @@ const Tabs = styled(TabsPrimitiveRoot, {
     flexDirection: 'column',
   },
 });
-
-export type TabsRef = ElementRef<typeof Tabs>;
-export type ITabsProps = ComponentProps<typeof Tabs> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Tabs;

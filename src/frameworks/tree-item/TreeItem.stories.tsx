@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import Box from '../box/Box';
 import Scrollbar from '../scrollbar/Scrollbar';
 import Text from '../text/Text';
-import TreeItemComponent, { ITreeItemProps } from './TreeItem';
+import TreeItemComponent, { ITreeItemProps } from './index';
 
 export default {
   title: 'Exemple/TreeItem',

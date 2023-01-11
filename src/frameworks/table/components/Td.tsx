@@ -1,11 +1,9 @@
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../stitches.config';
 
-const Th = styled('th', {
-  fontWeight: 'unset',
-  textAlign: 'start',
-  fontSize: '$2',
+const Td = styled('td', {
   py: '$2',
   borderBottom: '1px solid $gray4',
+  fontSize: '$2',
   variants: {
     align: {
       start: {
@@ -33,4 +31,4 @@ const Th = styled('th', {
   },
 });
 
-export default Th;
+export default Td;

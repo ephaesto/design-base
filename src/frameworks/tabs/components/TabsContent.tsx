@@ -1,5 +1,5 @@
 import { Content as TabsPrimitiveContent } from '@radix-ui/react-tabs';
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../stitches.config';
 
 const TabsContent = styled(TabsPrimitiveContent, {
   flexGrow: 1,

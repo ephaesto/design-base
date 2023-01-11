@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const TextField = styled('input', {
   // Reset
@@ -133,11 +132,5 @@ const TextField = styled('input', {
     size: '1',
   },
 });
-
-export type TextFieldRef = ElementRef<typeof TextField>;
-export type ITextFieldProps = ComponentProps<typeof TextField> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default TextField;
