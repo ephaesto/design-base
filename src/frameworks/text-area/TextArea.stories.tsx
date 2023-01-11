@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import TextAreaComponent, { ITextAreaProps } from './TextArea';
+import TextAreaComponent, { ITextAreaProps } from './index';
 
 export default {
   title: 'Exemple/TextArea',

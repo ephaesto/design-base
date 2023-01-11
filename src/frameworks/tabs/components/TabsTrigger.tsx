@@ -1,5 +1,5 @@
 import { Trigger as TabsPrimitiveTrigger } from '@radix-ui/react-tabs';
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../stitches.config';
 
 const TabsTrigger = styled(TabsPrimitiveTrigger, {
   flexShrink: 0,

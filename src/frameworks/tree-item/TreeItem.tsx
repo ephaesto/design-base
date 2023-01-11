@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const TreeItem = styled('div', {
   // Reset
@@ -192,11 +191,5 @@ const TreeItem = styled('div', {
     },
   },
 });
-
-export type TreeItemRef = ElementRef<typeof TreeItem>;
-export type ITreeItemProps = ComponentProps<typeof TreeItem> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default TreeItem;

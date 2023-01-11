@@ -1,43 +1,11 @@
-import { ComponentProps, ReactElement, ReactNode } from 'react';
-import {
-  Root as TooltipPrimitiveRoot,
-  Content as TooltipPrimitiveContent,
-  Trigger as TooltipPrimitiveTrigger,
-  Portal as TooltipPrimitivePortal,
-  Arrow as TooltipPrimitiveArrow,
-} from '@radix-ui/react-tooltip';
-import { styled } from '../../../stitches.config';
 import Box from '../box/Box';
 import Text from '../text/Text';
-
-const StyledContent = styled(TooltipPrimitiveContent, {
-  backgroundColor: '$transparentPanel',
-  borderRadius: '$1',
-  padding: '$1 $2',
-
-  variants: {
-    multiline: {
-      true: {
-        maxWidth: 250,
-        pb: 7,
-      },
-    },
-  },
-});
-
-type ITooltipPrimitiveRootProps = ComponentProps<typeof TooltipPrimitiveRoot>;
-type ITooltipPrimitiveContentProps = ComponentProps<typeof TooltipPrimitiveContent>;
-export type ITooltipProps = ITooltipPrimitiveContentProps &
-  ITooltipPrimitiveRootProps & {
-    children: ReactElement;
-    content: ReactNode;
-    multiline?: boolean;
-    open?: unknown;
-    defaultOpen?: (open: boolean) => void;
-    onOpenChange?: (open: boolean) => void;
-    delayDuration?: number;
-    disableHoverableContent?: boolean;
-  };
+import TooltipRoot from './components/TooltipRoot';
+import TooltipTrigger from './components/TooltipTrigger';
+import TooltipPortal from './components/TooltipPortal';
+import TooltipArrow from './components/TooltipArrow';
+import TooltipContent from './components/TooltipContent';
+import { ITooltipProps } from './TooltipTypes';
 
 const Tooltip = ({
   children,
@@ -52,10 +20,10 @@ const Tooltip = ({
 }: ITooltipProps): JSX.Element => {
   const rootProps = { open, defaultOpen, onOpenChange, delayDuration, disableHoverableContent };
   return (
-    <TooltipPrimitiveRoot {...rootProps}>
-      <TooltipPrimitiveTrigger asChild>{children}</TooltipPrimitiveTrigger>
-      <TooltipPrimitivePortal>
-        <StyledContent side="top" align="center" sideOffset={5} {...props} multiline={multiline}>
+    <TooltipRoot {...rootProps}>
+      <TooltipTrigger asChild>{children}</TooltipTrigger>
+      <TooltipPortal>
+        <TooltipContent side="top" align="center" sideOffset={5} {...props} multiline={multiline}>
           <Text
             size="1"
             as="p"
@@ -67,11 +35,11 @@ const Tooltip = ({
             {content}
           </Text>
           <Box css={{ color: '$transparentExtreme' }}>
-            <TooltipPrimitiveArrow width={11} height={5} style={{ fill: 'currentColor' }} />
+            <TooltipArrow width={11} height={5} style={{ fill: 'currentColor' }} />
           </Box>
-        </StyledContent>
-      </TooltipPrimitivePortal>
-    </TooltipPrimitiveRoot>
+        </TooltipContent>
+      </TooltipPortal>
+    </TooltipRoot>
   );
 };
 

@@ -1,14 +1,8 @@
 import { CheckIcon } from '@radix-ui/react-icons';
 import { Story, Meta } from '@storybook/react';
 import Box from '../box/Box';
-import Caption from './Caption';
-import TableComponent, { ITableProps } from './Table';
-import Tbody from './Tbody';
-import Td from './Td';
-import { Tfoot } from './Tfoot';
-import Th from './Th';
-import { Thead } from './Thead';
-import Tr from './Tr';
+import Caption from './components/Caption';
+import TableComponent, { ITableProps, Tfoot, Td, Tbody, Th, Thead, Tr } from './index';
 
 export default {
   title: 'Exemple/Table',

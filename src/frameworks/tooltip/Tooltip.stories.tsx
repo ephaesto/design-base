@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 import { DesignSystemProvider } from '../../providers/DesignSystemProvider';
 import IconButton from '../icon-button/IconButton';
-import TooltipComponent, { ITooltipProps } from './Tooltip';
+import TooltipComponent, { ITooltipProps } from './index';
 
 export default {
   title: 'Exemple/Tooltip',
