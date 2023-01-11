@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import SliderComponent, { ISliderProps } from './Slider';
+import SliderComponent, { ISliderProps } from './index';
 
 export default {
   title: 'Exemple/Slider',

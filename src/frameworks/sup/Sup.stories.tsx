@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import Paragraph from '../paragraph/Paragraph';
-import SupComponent, { ISupProps } from './Sup';
+import SupComponent, { ISupProps } from './index';
 
 export default {
   title: 'Exemple/Sup',

@@ -1,8 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import Button from '../button/Button';
-import SheetComponent, { ISheetProps } from './Sheet';
-import SheetContent from './SheetContent';
-import SheetTrigger from './SheetTrigger';
+import SheetComponent, { ISheetProps, SheetTrigger, SheetContent } from './index';
 
 export default {
   title: 'Exemple/Sheet',
