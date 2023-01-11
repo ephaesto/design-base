@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import StatusComponent, { IStatusProps } from './Status';
+import StatusComponent, { IStatusProps } from './index';
 
 export default {
   title: 'Exemple/Status',

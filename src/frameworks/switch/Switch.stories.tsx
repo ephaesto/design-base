@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import SwitchComponent, { ISwitchProps } from './Switch';
+import SwitchComponent, { ISwitchProps } from './index';
 
 export default {
   title: 'Exemple/Switch',

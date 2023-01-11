@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import Paragraph from '../paragraph/Paragraph';
-import SubComponent, { ISubProps } from './Sub';
+import SubComponent, { ISubProps } from './index';
 
 export default {
   title: 'Exemple/Sub',

@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import SkeletonComponent, { ISkeletonProps } from './Skeleton';
+import SkeletonComponent, { ISkeletonProps } from './index';
 
 export default {
   title: 'Exemple/Skeleton',

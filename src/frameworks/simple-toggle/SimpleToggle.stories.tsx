@@ -1,6 +1,6 @@
 import { ShadowNoneIcon } from '@radix-ui/react-icons';
 import { Story, Meta } from '@storybook/react';
-import SimpleToggleComponent, { ISimpleToggleProps } from './SimpleToggle';
+import SimpleToggleComponent, { ISimpleToggleProps } from './index';
 
 export default {
   title: 'Exemple/SimpleToggle',
