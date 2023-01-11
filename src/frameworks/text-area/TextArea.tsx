@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const TextArea = styled('textarea', {
   // Reset
@@ -94,11 +93,5 @@ const TextArea = styled('textarea', {
     size: '1',
   },
 });
-
-export type TextAreaRef = ElementRef<typeof TextArea>;
-export type ITextAreaProps = ComponentProps<typeof TextArea> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default TextArea;

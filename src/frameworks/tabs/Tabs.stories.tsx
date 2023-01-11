@@ -1,16 +1,13 @@
 import { Story, Meta } from '@storybook/react';
 import Text from '../text/Text';
-import TabsComponent, { ITabsProps } from './Tabs';
-import TabsContent from './TabsContent';
-import TabsList from './TabsList';
-import TabsTrigger from './TabsTrigger';
+import TabsComponent, { ITabsProps, TabsContent, TabsList, TabsTrigger } from './index';
 
 export default {
   title: 'Exemple/Tabs',
   component: TabsComponent,
 } as Meta;
 
-export const Tabs: Story<ITabsProps> = args => (
+export const Tabs: Story<ITabsProps> = () => (
   <TabsComponent defaultValue="tab-one">
     <TabsList>
       <TabsTrigger value="tab-one">General</TabsTrigger>

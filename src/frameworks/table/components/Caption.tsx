@@ -1,4 +1,4 @@
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../stitches.config';
 
 const Caption = styled('caption', {
   textAlign: 'start',

@@ -1,5 +1,4 @@
-import { ElementRef, ComponentProps, ReactNode } from 'react';
-import { styled, CSS } from '../../../stitches.config';
+import { styled } from '../../../stitches.config';
 
 const Text = styled('span', {
   // Reset
@@ -233,11 +232,5 @@ const Text = styled('span', {
     variant: 'contrast',
   },
 });
-
-export type TextRef = ElementRef<typeof Text>;
-export type ITextProps = ComponentProps<typeof Text> & {
-  css?: CSS;
-  as?: keyof JSX.IntrinsicElements | ReactNode;
-};
 
 export default Text;
