@@ -5,7 +5,7 @@ import Image from '../image/Image';
 import Box from '../box';
 
 export default {
-  title: 'Exemple/Card',
+  title: 'Components/Cards/Card',
   component: CardComponent,
 } as Meta;
 

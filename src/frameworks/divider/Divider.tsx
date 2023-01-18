@@ -1,7 +1,7 @@
-import { Root as SeparatorPrimitiveRoot } from '@radix-ui/react-separator';
+import { Root as DividerPrimitiveRoot } from '@radix-ui/react-separator';
 import { styled } from '../../../stitches.config';
 
-const Separator = styled(SeparatorPrimitiveRoot, {
+const Divider = styled(DividerPrimitiveRoot, {
   border: 'none',
   margin: 0,
   flexShrink: 0,
@@ -39,4 +39,4 @@ const Separator = styled(SeparatorPrimitiveRoot, {
   },
 });
 
-export default Separator;
+export default Divider;

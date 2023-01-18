@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import Separator from '../../../separator/Separator';
+import Divider from '../../../divider/Divider';
 import TabsListRoot from './components/TabsListRoot';
 import { ITabsListProps, TabsListRef } from './TabsListTypes';
 
@@ -7,7 +7,7 @@ const TabsList = forwardRef<TabsListRef, ITabsListProps>(
   (props, forwardedRef): JSX.Element => (
     <>
       <TabsListRoot {...props} ref={forwardedRef} />
-      <Separator />
+      <Divider />
     </>
   ),
 );

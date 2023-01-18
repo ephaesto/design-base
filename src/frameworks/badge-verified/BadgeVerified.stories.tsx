@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react';
 import BadgeVerifiedComponent, { IBadgeVerifiedProps } from './index';
 
 export default {
-  title: 'Exemple/BadgeVerified',
+  title: 'Components/Badge/BadgeVerified',
   component: BadgeVerifiedComponent,
 } as Meta;
 

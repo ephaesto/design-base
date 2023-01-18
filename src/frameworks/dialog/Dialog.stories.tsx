@@ -6,7 +6,7 @@ import Tooltip from '../tooltip/Tooltip';
 import DialogComponent, { DialogClose, DialogContent, DialogTrigger, IDialogProps } from './index';
 
 export default {
-  title: 'Exemple/Dialog',
+  title: 'Components/Dialogs/Dialog',
   component: DialogComponent,
 } as Meta;
 

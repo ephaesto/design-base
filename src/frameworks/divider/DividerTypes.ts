@@ -1,9 +1,9 @@
 import { ElementRef, ComponentProps, ReactNode } from 'react';
 import { CSS } from '../../../stitches.config';
-import Separator from './Separator';
+import Divider from './Divider';
 
-export type SeparatorRef = ElementRef<typeof Separator>;
-export type ISeparatorProps = ComponentProps<typeof Separator> & {
+export type DividerRef = ElementRef<typeof Divider>;
+export type IDividerProps = ComponentProps<typeof Divider> & {
   css?: CSS;
   as?: keyof JSX.IntrinsicElements | ReactNode;
 };
